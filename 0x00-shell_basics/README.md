@@ -1,1 +1,1 @@
-Moving file through directories
+Moved a file to another directory
