@@ -1,1 +1,1 @@
-allows user write
+copies permission from one file to another
