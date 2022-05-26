@@ -1,1 +1,1 @@
-changes file execute permission to everybody
+changes permission to world only execute
