@@ -1,1 +1,1 @@
-Prints the current user
+printing the groups of the current usee
