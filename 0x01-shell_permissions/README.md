@@ -1,1 +1,1 @@
-allows user execute file
+changes the file mode
