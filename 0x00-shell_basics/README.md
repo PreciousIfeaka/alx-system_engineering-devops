@@ -1,1 +1,1 @@
-Display current directory content numerically
+Displaying fle contents numerically
