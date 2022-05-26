@@ -1,1 +1,1 @@
-changes the file mode
+changes file execute permission to everybody
