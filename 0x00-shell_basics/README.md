@@ -1,1 +1,1 @@
-This is my first delete
+Deleted first directory
