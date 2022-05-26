@@ -1,1 +1,1 @@
-determining a file type
+Creating symbolic link
