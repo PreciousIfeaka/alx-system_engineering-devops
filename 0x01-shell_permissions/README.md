@@ -1,1 +1,1 @@
-copies permission from one file to another
+Changes the current directory mode
