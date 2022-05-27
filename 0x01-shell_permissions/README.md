@@ -1,1 +1,1 @@
-changing directories permissions
+creates new directory with permissions
