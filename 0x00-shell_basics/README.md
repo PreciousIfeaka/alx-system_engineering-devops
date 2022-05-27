@@ -1,1 +1,1 @@
-deletes files ending with ~
+creates subdirectories
