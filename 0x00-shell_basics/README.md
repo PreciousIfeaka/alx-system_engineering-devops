@@ -1,1 +1,1 @@
-moves upper case files
+deletes files ending with ~
