@@ -1,1 +1,1 @@
-changes group and super owner
+changes the owners of a symbolic link
