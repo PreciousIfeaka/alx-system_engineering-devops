@@ -1,1 +1,1 @@
-changes the owners of a symbolic link
+changes file owner from a given one
