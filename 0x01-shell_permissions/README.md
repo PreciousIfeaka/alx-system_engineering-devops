@@ -1,1 +1,1 @@
-Changes the current directory mode
+changes directories permissions
