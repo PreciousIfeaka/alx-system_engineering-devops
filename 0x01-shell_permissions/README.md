@@ -1,1 +1,1 @@
-changes directories permissions
+changing directories permissions
