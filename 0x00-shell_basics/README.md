@@ -1,1 +1,1 @@
-lists files and directories with commas
+lists directories with commas
