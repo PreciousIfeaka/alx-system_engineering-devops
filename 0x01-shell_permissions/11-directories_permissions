@@ -1,2 +1,2 @@
 #!/bin/bash
-chmrod -R a+x
+chmod -R a+x*
