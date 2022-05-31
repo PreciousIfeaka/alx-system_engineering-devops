@@ -1,1 +1,1 @@
-Prints the last ten lines of a file
+Printed first ten lines of a file
