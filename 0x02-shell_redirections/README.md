@@ -1,1 +1,1 @@
-Prints file content
+Prints contents of two files
