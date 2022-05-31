@@ -1,1 +1,1 @@
-Prints the third line
+Writes text into a file
