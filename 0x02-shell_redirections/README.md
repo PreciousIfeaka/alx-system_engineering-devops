@@ -1,1 +1,1 @@
-Printed first ten lines of a file
+Prints the third line
