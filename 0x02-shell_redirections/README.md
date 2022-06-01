@@ -1,1 +1,1 @@
-Prints the last line of a file
+duplicates last line
