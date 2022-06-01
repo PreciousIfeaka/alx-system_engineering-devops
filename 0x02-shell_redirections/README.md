@@ -1,1 +1,1 @@
-prints unique lines only
+finds a pattern from file
