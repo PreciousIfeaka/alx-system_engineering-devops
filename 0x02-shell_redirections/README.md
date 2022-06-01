@@ -1,1 +1,1 @@
-counting directories
+prints ten newest files
