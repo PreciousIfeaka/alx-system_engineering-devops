@@ -1,1 +1,1 @@
-displays users and homes 
+creates a file wh best school
