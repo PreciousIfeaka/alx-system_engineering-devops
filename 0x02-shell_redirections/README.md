@@ -1,1 +1,1 @@
-finds a pattern from file
+counts patterened lines
