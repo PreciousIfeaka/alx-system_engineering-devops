@@ -1,1 +1,1 @@
-counts patterened lines
+displays patterned lines
