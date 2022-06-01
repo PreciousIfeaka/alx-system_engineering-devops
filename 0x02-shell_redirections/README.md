@@ -1,1 +1,1 @@
-displays the reverse of a script
+displays users and homes 
