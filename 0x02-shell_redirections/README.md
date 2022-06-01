@@ -1,1 +1,1 @@
-changes A, c to Z,e
+Removes c and C
