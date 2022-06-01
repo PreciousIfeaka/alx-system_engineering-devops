@@ -1,1 +1,1 @@
-displays lines starting with all letters
+changes A, c to Z,e
