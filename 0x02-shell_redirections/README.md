@@ -1,1 +1,1 @@
-duplicates last line
+deletes all js files
