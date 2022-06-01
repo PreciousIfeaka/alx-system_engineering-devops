@@ -1,1 +1,1 @@
-Removes c and C
+displays the reverse of a script
