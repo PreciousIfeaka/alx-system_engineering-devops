@@ -1,1 +1,1 @@
-displays patterned lines
+diplays files without bin
