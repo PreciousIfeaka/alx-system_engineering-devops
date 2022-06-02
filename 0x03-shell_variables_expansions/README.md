@@ -1,1 +1,1 @@
-converts binary to decimal
+prints lower case combinations
