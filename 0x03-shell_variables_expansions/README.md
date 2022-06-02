@@ -1,1 +1,1 @@
-lists variables amd functions
+creates local variable
