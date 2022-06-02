@@ -1,1 +1,1 @@
-displays directory user
+adds /action to PATH
