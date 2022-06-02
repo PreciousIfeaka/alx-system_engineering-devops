@@ -1,1 +1,1 @@
-lists environment variables
+lists variables amd functions
