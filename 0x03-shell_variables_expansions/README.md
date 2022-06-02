@@ -1,1 +1,1 @@
-creates an alias
+displays directory user
