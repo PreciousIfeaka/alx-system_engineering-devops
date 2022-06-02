@@ -1,1 +1,1 @@
-prints the exponent of two variables
+converts binary to decimal
