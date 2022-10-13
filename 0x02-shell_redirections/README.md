@@ -1,1 +1,1 @@
-creates a file wh best school
+creates a long text
