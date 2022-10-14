@@ -4,7 +4,7 @@
 minute=0
 hour=0
 
-while [ $hour -lt 12 ]
+while [ $hour -le 12 ]
 do
 	while [ $minute -le 59 ]
 	do
@@ -20,4 +20,3 @@ do
 	hour=$(( hour+1 ))
 	minute=0
 done
-echo "Hour: 12"
