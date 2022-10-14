@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# This script show 12 hours in terms of minutes
+
+minute=0
+hour=0
+
+while [ $hour -lt 12 ]
+do
+	while [ $minute -le 59 ]
+	do
+		if [ $minute -eq 0 ]
+		then
+			echo "Hour: $hour"
+			minute=$(( minute+1 ))
+		else
+			echo "$minute"
+			minute=$(( minute+1 ))
+		fi
+	done
+	hour=$(( hour+1 ))
+	minute=0
+done
+echo "Hour: 12"
