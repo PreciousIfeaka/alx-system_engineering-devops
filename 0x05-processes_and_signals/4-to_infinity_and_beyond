@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script displays a looped string with a delay of 2secs
+#	for every iterations
+
+a=0
+
+while [ $a -eq 0 ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
