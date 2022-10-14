@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script terminates a process
+
+trap "echo I am invincible!!!" SIGTERM
+
+a=0
+
+while [ $a -eq 0 ]
+do
+	echo "To Infinity and beyond"
+	sleep 2
+done
