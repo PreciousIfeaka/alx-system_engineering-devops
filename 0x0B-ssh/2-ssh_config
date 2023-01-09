@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures SSH client to use given private key
+# Configures to refuse to authenticate using password
+Host *
+	IdentitiesOnly yes
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
