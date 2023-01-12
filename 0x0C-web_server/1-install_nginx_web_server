@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script installs Nginx on an ubunt server
+# Nginx should listen to port 80
+# Returns a page that contains 'Hello World!'...
+# ...when querying Nginx at its root with a GET request
+# systemctl can't be used to restart nginx
+
+apt-get update && apt-get install -y nginx
+service nginx start
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+ufw allow 'Nginx HTTP'
+service nginx restart
