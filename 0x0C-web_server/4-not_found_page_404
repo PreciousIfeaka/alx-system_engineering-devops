@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# This script installs Nginx on an ubunt server
+# Nginx should listen to port 80
+# Returns a page that contains 'Hello World!'...
+# ...when querying Nginx at its root with a GET request
+# systemctl can't be used to restart nginx
+# configures the Nginx server so that /redirect_me is...
+# ...redirecting to another page
+
+sudo apt-get update -y
+sudo apt-get install -y nginx
+
+sudo chown -R "$USER":"$USER" /var/www/
+sudo chown -R "$USER":"$USER" /etc/nginx
+
+# allows nginx to serve on http
+sudo ufw allow 'Nginx HTTP'
+
+sudo nginx start
+echo 'Hello World!' > /var/www/html/index.html
+line="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "47i $line" /etc/nginx/sites-available/default
+
+# 404 Error page
+echo "Ceci n'est pas une page" > /var/www/html/error_404.html
+sed -i '38i\error_page 404 /error_404.html;' /etc/nginx/sites-available/default
+
+sudo service nginx restart
