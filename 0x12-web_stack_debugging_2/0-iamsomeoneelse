@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-# This script validates a user passed as an argument on the terminal
-
-sudo -u "$1" whoami 
