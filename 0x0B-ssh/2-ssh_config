@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# this file contains the ssh configuration of the remote ubuntu server
+
+PasswordAuthentication no
+IdentityFile ~/.ssh/school
+
