@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script installs nginx on a remote server
+# Nginx is listening on port 80
+# Nginx returns a page that contains the string 'hello world' when queried at its root
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo 'Hello World!' > index.nginx-debian.html
+system restart nginx
