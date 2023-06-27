@@ -7,7 +7,7 @@ apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-echo "Ceci n'est pas une page\n" > /var/www/html/custom_404.html
+echo "Ceci n'est pas une page" > /var/www/html/custom_404.html
 sed -i '/listen 80 default_server/a \\trewrite ^/tredirect_me http://www.youtube.com/watch?v=JCxGxK3GZiA permanent;' /etc/nginx/sites-available/default
 sed -i '/listen 80 default_server/a \\terror_page 404 /custom_404.html;' /etc/nginx/sites-available/default 
 service nginx reload
