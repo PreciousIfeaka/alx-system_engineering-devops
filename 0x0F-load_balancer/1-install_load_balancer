@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
-
 # This script installs a load balancer on lb-01 server
 
-sudo apt-get -y update
-sudo apt-get -y install haproxy
-sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
-sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.original
-sudo sed -i "$ a\listen 57820-lb-01\n\tbind *:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 57820-web-01 18.234.107.122:80 check\n\tserver 57820-web-02 54.162.235.74:80 check" /etc/haproxy/haproxy.cfg
-sudo service haproxy start
+apt-get -y update
+apt-get -y install haproxy
+echo "ENABLED=1" >> /etc/default/haproxy
+
+config="\
+frontend haproxy_balancer
+        bind *:80
+        mode http
+        default_backend webservers
+
+backend webservers
+        balance roundrobin
+        server 57820-web-01 18.234.107.122:80 check
+        server 57820-web-02 54.162.235.74:80 check
+"
+
+cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.original
+echo "$config" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
