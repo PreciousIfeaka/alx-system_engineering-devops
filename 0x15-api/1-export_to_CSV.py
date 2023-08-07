@@ -14,13 +14,13 @@ if __name__ == "__main__":
     url2 = f'https://jsonplaceholder.typicode.com/todos?userId={id}'
 
     resp = requests.get(url1)
-    name = resp.json().get("name")
+    name = resp.json().get("username")
 
     res = requests.get(url2)
     res = res.json()
     if name:
         lists = []
-        fields = ['id', 'name', 'completed', 'title']
+        fields = ['id', 'username', 'completed', 'title']
         filename = f'{id}.csv'
         csvfile = open(filename, 'w')
         csvwriter = csv.DictWriter(csvfile, fieldnames=fields,
@@ -30,7 +30,7 @@ if __name__ == "__main__":
             doneOrNot = user.get('completed')
             title = user.get('title')
 
-            row = {'id': id, 'name': name, 'completed': doneOrNot,
+            row = {'id': id, 'username': name, 'completed': doneOrNot,
                    'title': title}
             lists.append(row)
         csvwriter.writerows(lists)
