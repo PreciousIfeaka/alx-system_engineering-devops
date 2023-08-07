@@ -23,13 +23,14 @@ if __name__ == "__main__":
         fields = ['id', 'name', 'completed', 'title']
         filename = f'{id}.csv'
         csvfile = open(filename, 'w')
-        csvwriter = csv.DictWriter(csvfile, fieldnames = fields)
+        csvwriter = csv.DictWriter(csvfile, fieldnames = fields,\
+                                   quoting=csv.QUOTE_ALL)
 
         for user in res:
             doneOrNot = user.get('completed')
             title = user.get('title')
 
             row = {'id': id, 'name': name, 'completed': doneOrNot,\
-                    'title': title}
+                   'title': title}
             lists.append(row)
         csvwriter.writerows(lists)
