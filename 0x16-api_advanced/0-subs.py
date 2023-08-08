@@ -5,6 +5,7 @@ and returns the number of subscribers of a subreddit
 """
 
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
