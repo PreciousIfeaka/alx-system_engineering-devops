@@ -4,8 +4,8 @@
 the titles of the first 10 host posts for a given subreddit
 """
 
-import sys
 import requests
+import sys
 
 
 def recurse(subreddit, hot_list=[], after="", count=0):
